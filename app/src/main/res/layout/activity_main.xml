@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todayTxt"
+        android:textSize="19sp"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/date"
+        android:textStyle="bold"
+        android:text="@string/today" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/birthTxt"
+        android:textSize="19sp"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/todayTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/date"
+        android:textStyle="bold"
+        android:text="@string/select" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageTxt"
+        android:textSize="19sp"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/birthTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/date"
+        android:textStyle="bold"
+        android:text="@string/age" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ageBtn"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ageTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/btn"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/birthday"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculateBtn"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ageBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/btn"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/calculate"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

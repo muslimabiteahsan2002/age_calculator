@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application Age Calculator</string>
+    <string name="today">today</string>
+    <string name="select">Select your birthday</string>
+    <string name="age">age</string>
+    <string name="birthday">ENTER TOUR BIRTHDAY</string>
+    <string name="calculate">CALCULATE AGE</string>
+</resources>
